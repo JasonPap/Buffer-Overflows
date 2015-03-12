@@ -5,9 +5,12 @@ As a first project for my University's Computer Security course I was tasked to 
 There are three other users on the same Linux machine so the /home directory looks like this:
 
 jason@linux /home $ ls
+
 hyperuser jason masteruser superuser
 
-Each of the users (superuser, hyperuser, masteruser) have an executable on their home directory which can be executed by other users and runs with the **suid bit enabled**. That means that when executed the program will have the owners privileges and not the privileges of the user executing it. Each user also have a *secret.txt* file which can be read only by him.
+Each of the users (superuser, hyperuser, masteruser) have an executable on their home directory which can be executed by other users and runs with the **suid bit enabled**. That means that when executed the program will have the owners privileges and not the privileges of the user executing it. 
+
+Each user also have a *secret.txt* file which can be read only by him.
 
 
 ### Aim of the project
@@ -21,8 +24,8 @@ Each of the executables have a different flaw that must be exploited with the ul
 
 
 ### Links
-Computer Security course [website](http://crypto.di.uoa.gr/csec/Asphaleia_Ypologistikon_Systematon/YS13.html)
-"Smashing the stack for fun and profit" great introduction to buffer overflows [here](http://insecure.org/stf/smashstack.html).
+* Computer Security course [website](http://crypto.di.uoa.gr/csec/Asphaleia_Ypologistikon_Systematon/YS13.html)
+* "Smashing the stack for fun and profit" great introduction to buffer overflows [here](http://insecure.org/stf/smashstack.html).
 
 
 ### License
