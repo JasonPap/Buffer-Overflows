@@ -16,11 +16,11 @@ Each user also have a *secret.txt* file which can be read only by him.
 ### Aim of the project
 The goal is to introduce students to buffer overflow vulnerabilities. In order to reveal the final secret, each of the three secrets from superuser, hyperuser and masteruser must be combined.
 
-Each of the executables have a different flaw that must be exploited with the ultimate goal in each case to create a Shell running with the victim's privileges.
+Each of the executables have a different flaw that must be exploited with the ultimate goal in each case to [create a Shell](https://github.com/JasonPap/Buffer-Overflows/tree/master/shellcode) running with the victim's privileges.
 
-* superuser: he has the *convert.c* program without any protection against buffer overflows and is the easiest target.
-* hyperuser: has the *arpsender.c* program which uses a canary to protect against buffer overflows.
-* masteruser: has the *zoo.cpp* program that must be exploited using the VPTR.
+* [superuser](https://github.com/JasonPap/Buffer-Overflows/tree/master/superuser): he has the *convert.c* program without any protection against buffer overflows and is the easiest target.
+* [hyperuser](https://github.com/JasonPap/Buffer-Overflows/tree/master/hyperuser): has the *arpsender.c* program which uses a canary to protect against buffer overflows.
+* [masteruser](https://github.com/JasonPap/Buffer-Overflows/tree/master/masteruser): has the *zoo.cpp* program that must be exploited using the VPTR.
 
 
 ### Links
