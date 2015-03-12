@@ -3,11 +3,11 @@ As a first project for my University's Computer Security course I was tasked to 
 
 ### The scenario
 There are three other users on the same Linux machine so the /home directory looks like this:
-
+```
 jason@linux /home $ ls
 
 hyperuser jason masteruser superuser
-
+```
 Each of the users (superuser, hyperuser, masteruser) have an executable on their home directory which can be executed by other users and runs with the **suid bit enabled**. That means that when executed the program will have the owners privileges and not the privileges of the user executing it. 
 
 Each user also have a *secret.txt* file which can be read only by him.
