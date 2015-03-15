@@ -1,6 +1,16 @@
 # Introduction to buffer overflows
 As a first project for my University's Computer Security course I was tasked to find and exploit buffer overflow vulnerabilities on three different simple programs.
 
+### Prerequisites
+Before diving into buffer overflows you should be familiar with:
+* Basic C/C++ understanding.
+* Linux permissions.
+*	Basic Assembly knowledge.
+*	GDB and program memory allocation (stack, frames).
+
+The GNU project debugger (a.k.a. GDB) is especially useful and since I won’t go into details on how to use it, if you’re not familiar with go check the docs or any good tutorial. The parts that are useful to this project are: disassembling the program, inspecting variable content and print frame information such as `saved return address`.
+
+
 ### The scenario
 There are three other users on the same Linux machine so the /home directory looks like this:
 ```
