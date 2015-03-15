@@ -21,4 +21,4 @@ In order to solve this problem it's common to use what's called a `NOP slide`. A
 
 
 ### Links
-For more information see [here](https://lthieu.wordpress.com/2012/11/10/exploit-stack-based-buffer-overflow-using-nop-sled-technique/) or [here](http://stackoverflow.com/questions/14760587/how-does-a-nop-sled-work) for more information. 
+For more information see [here](https://lthieu.wordpress.com/2012/11/10/exploit-stack-based-buffer-overflow-using-nop-sled-technique/) or [here](http://stackoverflow.com/questions/14760587/how-does-a-nop-sled-work).
