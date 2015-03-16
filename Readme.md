@@ -10,6 +10,7 @@ Before diving into buffer overflows you should be familiar with:
 
 The GNU project debugger (a.k.a. GDB) is especially useful and since I won’t go into details on how to use it, if you’re not familiar with go check the docs or any good tutorial. The parts that are useful to this project are: disassembling the program, inspecting variable content and print frame information such as `saved return address`.
 
+Now you can start reading about buffer overflows [here](https://github.com/JasonPap/Buffer-Overflows#links).
 
 ### The scenario
 There are three other users on the same Linux machine so the /home directory looks like this:
@@ -35,6 +36,7 @@ Each of the executables have a different flaw that must be exploited with the ul
 
 ### Links
 * Computer Security course [website](http://crypto.di.uoa.gr/csec/Asphaleia_Ypologistikon_Systematon/YS13.html)
+* Course slides on b.o. [here](https://onedrive.live.com/redir?resid=F5C8E228AE2A5BA0!174981&authkey=!APSO6hIJ5_rC2hc&ithint=file%2cpdf)
 * "Smashing the stack for fun and profit" great introduction to buffer overflows [here](http://insecure.org/stf/smashstack.html).
 
 
