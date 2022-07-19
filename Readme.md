@@ -12,6 +12,8 @@ The GNU project debugger (a.k.a. GDB) is especially useful and since I won’t g
 
 Now you can start reading about buffer overflows [here](https://github.com/JasonPap/Buffer-Overflows#links).
 
+(also the GDB manual [here](https://sourceware.org/gdb/current/onlinedocs/gdb/))
+
 ### The scenario
 There are three other users on the same Linux machine so the /home directory looks like this:
 ```
